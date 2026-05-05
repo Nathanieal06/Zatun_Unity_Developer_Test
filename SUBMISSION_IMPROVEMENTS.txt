@@ -1,0 +1,25 @@
+SUBMISSION_IMPROVEMENTS.txt
+1. AI Responsiveness & Bug Resolution
+Zombie AI Optimization: I would address the current latency in the zombie response times by refactoring the detection logic from a basic distance check to a more efficient Sphere Overlap or Raycast system.
+
+Code Hardening: I would prioritize resolving the current NullReferenceException bugs and input callback issues to ensure a completely stable gameplay experience for the end user.
+
+2. Narrative & World Building
+Environmental Storytelling: Given more time, I would expand the game's narrative beyond basic mechanics, integrating more cultural depth and character motivation into the level design.
+
+Quest & Dialogue Systems: I would implement a modular dialogue system to provide players with more context regarding their objectives and the world they are exploring.
+
+3. UI/UX Overhaul
+Thematic UI Design: I would replace the current basic UI bars with a more visually appealing, custom-designed HUD that matches the game's overall aesthetic and atmosphere.
+
+Dynamic Feedback: I would add more interactive UI elements, such as damage numbers, screen-space blood splatter, and directional hit indicators to keep the player better informed during combat.
+
+4. "Game Feel" & Polish (The Juice)
+Camera Shake & Impact: I would utilize Cinemachine Impulse to add dynamic screen shake on gunshots and player damage to make the combat feel more visceral and weighted.
+
+Refined Transitions: I would implement better blending between animation states (like transitioning from a sprint to a crouch) to ensure the character movement feels fluid rather than "snappy".
+
+5. Performance Optimization
+Technical Profiling: I would use the Unity Profiler to identify and eliminate current performance bottlenecks, specifically targeting the draw call count in the environment and the CPU usage of the AI agents.
+
+Mesh Simplification: I would address the convex mesh warnings on props (like the barrels) by creating custom low-poly collision hulls to improve physics calculations.

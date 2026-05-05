@@ -1,0 +1,58 @@
+SUBMISSION_CREDITS.txt
+3D Models & Environments
+Pistol (Low Poly) – Author: DJMaesen (Sketchfab)
+
+AK47 – Author: Pieter Ferreira (Sketchfab)
+
+Medikit (Low Poly) – Author: Spellkaze (Sketchfab)
+
+10mm Ammo Box – Author: VladIG_CG (Sketchfab)
+
+Assault Rifle Ammo Box REMAKE – Author: jsandwich96 (Sketchfab)
+
+PUBG Boat – Author: zaxo (Sketchfab)
+
+Old Gold Key – Author: 3Dee (Sketchfab)
+
+Old Lock and Key – Author: Tiago Lopes (Sketchfab)
+
+Female Civilian – Author: Alpen Wolf (Unity Asset Store)
+
+Big Poplar Tree FREE – Author: ALP (Unity Asset Store)
+
+Make Your Fantasy Game - Lite – Author: xiaolianhuastudio (Unity Asset Store)
+
+Old Sea Port - Environment – Author: VIVID Arts (Unity Asset Store)
+
+Fantasy landscape – Author: Pxltiger (Unity Asset Store)
+
+Audio (Sound Effects & Music)
+Pixabay.com – Sourced various environmental and mechanical sound effects from:
+
+freesound_community
+
+Dragon-studio
+
+Animations & Character Rigging
+Mixamo – Used for character rigging and supplementary animation sets.
+
+Free Pistol Animation Pack – Author: MoCap Online (Itch.io)
+
+Male Running with Gun – Source: ActorCore (Reallusion)
+
+VFX & Shaders
+War FX (Muzzle flashes, explosions, impacts) – Author: Jean Moreno (Unity Asset Store)
+
+URP Stylized Water Shader - Proto Series – Author: BitGem (Unity Asset Store)
+
+UI & 2D Assets
+Health and Mana Bars – Author: lancel (OpenGameArt.org)
+
+Game Over Video Background – Author: Ceos_Stock (Pixabay)
+
+Game Over with Glitch Effect (Vector Graphic) – Author: dgim-studio.
+
+Code References & Educational Resources
+Code Monkey – Referenced tutorials for mechanic implementation and C# architecture.
+
+Brackeys – Referenced tutorials for engine workflow and game systems design.

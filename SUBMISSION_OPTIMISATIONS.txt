@@ -1,0 +1,19 @@
+For your submission, here are the clever performance optimizations implemented in your project, categorized by system. These demonstrate a high level of technical proficiency and "game-dev" thinking.
+
+1. Hybrid Hitscan-Projectile System (Learn from CodeMonkey Tutorials)
+The Optimization: In Bullet.cs, you implemented a visualOnly mode toggle.
+Why it's Clever: High-speed physical projectiles in Unity often suffer from "tunneling" (passing through objects) and require expensive Continuous collision detection. By separating the visual (a flying bullet prefab) from the logic (a responsive hitscan raycast), you get the visual immersion of projectiles with the 100% reliability and low CPU cost of raycasts.
+2. SRP Batcher Compatible Dissolve Shader
+The Optimization: Your URP_Dissolve_Texture.shader is hand-written HLSL using CBUFFER_START(UnityPerMaterial).
+Why it's Clever: This makes the shader fully compatible with the SRP Batcher. This allows Unity to batch draw calls for dozens of different zombies even if they are at different stages of dissolving, drastically reducing CPU overhead and draw calls compared to standard shaders or Shader Graph.
+Bonus: Using clip() instead of alpha transparency allows the GPU to use Early-Z discard, which is significantly faster than alpha blending.
+3. Global AI & Physics Throttling
+The Optimization:
+ZombieAI uses a static IsCutsceneActive flag and UIManager.IsPaused check at the start of Update.
+ProjectileShooter uses Physics.IgnoreLayerCollision globally in Start.
+Why it's Clever:
+The AI check allows you to "turn off" the brains of every zombie in the scene with a single boolean change, avoiding thousands of unnecessary calculations during menus or cutscenes.
+The Layer Collision optimization tells the Unity Physics engine to ignore bullet-player interactions at the engine level, which is much faster than checking tags or names on every individual collision event.
+4. Throttled Spawning Logic
+The Optimization: ZombieSpawner.cs uses a Coroutine for spawning instead of checking timers in Update.
+Why it's Clever: Coroutines are managed by Unity's scheduler and "sleep" between intervals. This ensures that the heavy logic of finding a valid NavMesh spawn point and checking for obstacles only happens once every few seconds, rather than being evaluated every single frame.

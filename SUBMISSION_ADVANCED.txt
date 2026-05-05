@@ -1,0 +1,17 @@
+Advanced Animation Rigging
+Procedural Aiming: Implemented a multi-constraint rigging system using Unity’s Animation Rigging package to ensure the character's upper body and head accurately track the crosshair.
+
+Weapon Handling: Utilized Two-Bone IK and Multi-Parent Constraints to maintain consistent hand-to-weapon positioning across different movement states (walking, running, aiming).
+
+2. Cinemachine & Camera Systems
+Dynamic Framing: Leveraged Cinemachine for the third-person camera, utilizing POV and 3rd Person Follow components with customized damping to ensure smooth tracking during high-intensity combat.
+
+State-Driven Camera: Configured a Cinemachine State-Driven Camera that automatically adjusts FOV and offsets when the player switches between hip-fire and Aim-Down-Sights (ADS) modes.
+
+3. Modular Controller Architecture
+Scriptable Object System: Structured the weapon system to be data-driven, allowing for quick iteration of weapon stats (fire rate, recoil, damage) without modifying core C# logic.
+
+Input System (New): Fully integrated the Unity Input System for modular control handling, making the project easily adaptable for both Keyboard/Mouse and Controller inputs.
+
+4. Workflow Automation
+Python Tooling: Developed custom Python scripts (fix_all_prefabs.py) to automate the batch processing of weapon prefabs and asset metadata, significantly reducing manual setup time within the Unity Editor.

@@ -1,0 +1,61 @@
+# =========================
+# UNITY GENERATED (CRITICAL)
+# =========================
+Library/
+Temp/
+Logs/
+Obj/
+Build/
+Builds/
+UserSettings/
+MemoryCaptures/
+
+# =========================
+# SUBMISSION BUILD (REMOVE)
+# =========================
+SUBMISSION_BUILD/
+
+# =========================
+# LARGE / RAW ASSETS
+# =========================
+*.psd
+*.blend
+*.max
+*.zip
+*.rar
+
+# HEAVY TEXTURES
+*.tga
+*.tiff
+
+# UNITY LARGE DATA FILES
+*.resS
+
+# =========================
+# TEMP / SOURCE FOLDERS
+# =========================
+*/Source/
+*/Raw/
+*/Backup/
+*/Mockup/
+
+# =========================
+# OS FILES
+# =========================
+Thumbs.db
+.DS_Store
+
+# =========================
+# IDE / PROJECT FILES
+# =========================
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.userprefs
+
+# =========================
+# IMPORTANT (DO NOT REMOVE)
+# =========================
+!*.meta
